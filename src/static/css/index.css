@@ -117,7 +117,9 @@ body {
   font-weight: bold;
 }
 
-
+.img-link {
+  cursor: pointer;
+}
 /*
  * Footer
  */
