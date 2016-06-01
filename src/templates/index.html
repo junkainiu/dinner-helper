@@ -51,10 +51,10 @@
           <div class="inner cover">
             <h1 class="cover-heading">丽华快餐</h1>
             <p class="lead">丽华快餐是一家历史悠久的中式快餐店</p>
-            <a href="http://127.0.0.1:5000/lihua"><img class="img-link" src="../static/img/lihua.png"></img></a>
+            <a href="{{ url_for('handle_lihua') }}"><img class="img-link" src="../static/img/lihua.png"></img></a>
             <h1 class="cover-heading">真功夫快餐</h1>
             <p class="lead">我觉得真功夫没有丽华好吃</p>
-            <a href="http://127.0.0.1:5000/zkf"><img class="img-link" src="../static/img/zhengongfu.png"><img></a>
+            <a href="{{ url_for('handle_zkf') }}"><img class="img-link" src="../static/img/zhengongfu.png"><img></a>
           </div>
 
           <div class="mastfoot">
