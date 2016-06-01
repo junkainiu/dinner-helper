@@ -1,0 +1,17 @@
+.svn
+*.swp
+*~
+var/*
+local
+local_settings
+tools/*
+build/*
+*.pyc
+.tags
+.tags1
+etc/runtime/*
+*.po
+*.mo
+dist/*
+.tern-project
+venv/
