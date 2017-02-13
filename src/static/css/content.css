@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #f7f7f7;
+}
+.container {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.picker {
+    width: 100%;
+    background-color: blue;
+    text-align: right;
+    border-bottom: 1px #e6e6e6 solid
+}
+
+.picker-inner {
+    width: 186px;
+    height: 42px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+.picker img {
+    width: 186px;
+    height: 55px;
+}
+.restaurants-container {
+    width: 100%;
+    height: 90%;
+    background-color: yellow;
+}
+.excavator-container {
+    border: 1px solid #e6e6e6;
+}
+
+.excavator {
+    line-height: 26px;
+    padding: 10px 10px 10px 7em;
+    background-color: #fff;
+    position: relative;
+}
+.excavator-name {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    color: #999;
+}

@@ -8,70 +8,73 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
     <title>dinner-helper</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../static/css/index.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="../static/css/navbar.css" rel="stylesheet">
+    <link href="../static/css/content.css" rel="stylesheet">
   </head>
-
   <body>
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+              </div>
 
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">netis-dinner-order-system</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Usage</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">丽华快餐</h1>
-            <p class="lead">丽华快餐是一家历史悠久的中式快餐店</p>
-            <a href="{{ url_for('handle_lihua') }}"><img class="img-link" src="../static/img/lihua.png"></img></a>
-            <h1 class="cover-heading">真功夫快餐</h1>
-            <p class="lead">我觉得真功夫没有丽华好吃</p>
-            <a href="{{ url_for('handle_zkf') }}"><img class="img-link" src="../static/img/zhengongfu.png"><img></a>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Netis dinner order system built by <a href="#">@leo.niu</a> and <a href='#'>@kenneth.zhao</a></p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">Link</a></li>
+                  </ul>
+                  <form class="navbar-form navbar-left">
+                      <div class="form-group">[/]
+                          <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+     </nav>
+     <div class="container">
+         <div class="main-content">
+             <div class='picker'>
+                 <div class='picker-inner'>
+                    <img src="//faas.elemecdn.com/desktop/media/img/takeout.f58d1e.png" alt="谁去拿外卖"></img>
+                </div>
+             </div>
+             <div class="restaurants-container">
+                 <div class="excavator-container">
+                     <div class="excavator">
+                         <span class="excavator-name">
+                             商家分类：
+                         </span>
+                     </div>
+                 </div>
+                 <div class="restaurants">
+                 </div>
+             </div>
+         </div>
+     </div>
     <script src="../static/js/jquery-1.12.4.min.js"></script>
     <script src="../static/js/bootstrap.min.js"></script>
     </script>
